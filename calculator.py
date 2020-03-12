@@ -23,7 +23,6 @@ operator=""
 value_input=StringVar()
 display=Entry(Calculator,font=('Times 18',13,'bold'),textvariable=value_input,
 bd=30,insertwidth=3,bg="lightcyan",justify='right').grid(columnspan=4)
-####################################################################################################
 input_bottonclear=Button(Calculator,padx=2,pady=4,bd=3,fg='black',
 font=('black',16,'bold'),text="C",command=btnclear)
 input_bottonclear.grid(row=1,column=0)
@@ -36,7 +35,6 @@ input_bottonmodule.grid(row=1,column=2)
 input_bottondiv=Button(Calculator,padx=5,pady=3,bd=3,fg='black',
     font=('black',17,'bold'),text="/",command=lambda:btnclick('/'))
 input_bottondiv.grid(row=1,column=3)
-###############################################################################################
 input_botton7=Button(Calculator,padx=3,pady=5,bd=3,fg='black',
     font=('black',17,'bold'),text="7",command=lambda:btnclick(7))
 input_botton7.grid(row=2,column=0)
@@ -49,7 +47,6 @@ input_botton9.grid(row=2,column=2)
 input_bottonMul=Button(Calculator,padx=4,pady=5,bd=3,fg='black',
     font=('black',17,'bold'),text="*",command=lambda:btnclick("*"))
 input_bottonMul.grid(row=2,column=3)
-################################################################################################
 input_botton4=Button(Calculator,padx=3,pady=5,bd=3,fg='black',
     font=('black',17,'bold'),text="4",command=lambda:btnclick(4))
 input_botton4.grid(row=3,column=0)
@@ -62,7 +59,6 @@ input_botton6.grid(row=3,column=2)
 input_bottonsub=Button(Calculator,padx=4,pady=5,bd=3,fg='black',
     font=('black',17,'bold'),text="-",command=lambda:btnclick("-"))
 input_bottonsub.grid(row=3,column=3)
-#################################################################################################
 input_botton1=Button(Calculator,padx=3,pady=5,bd=3,fg='black',
     font=('black',17,'bold'),text="1",command=lambda:btnclick(1))
 input_botton1.grid(row=4,column=0)
@@ -78,7 +74,6 @@ input_botton3.grid(row=4,column=2)
 input_bottonAdd=Button(Calculator,padx=3,pady=5,bd=3,fg='black',
     font=('black',17,'bold'),text="+",command=lambda:btnclick("+"))
 input_bottonAdd.grid(row=4,column=3)
-###############################################################################################
 input_bottonAC=Button(Calculator,padx=3,pady=6, width=2,bd=3,fg='black',
     font=('black',15,'bold'),text="AC",command=btnclear)
 input_bottonAC.grid(row=5,column=0)
@@ -91,5 +86,4 @@ input_bottondot.grid(row=5,column=2)
 input_bottonequals=Button(Calculator,padx=3,pady=6.6,bd=3,fg='black',
     font=('black',16,'bold'),text="=",command=btnEquals)
 input_bottonequals.grid(row=5,column=3)
-#################################################################################################
 Calculator.mainloop()
