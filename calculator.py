@@ -14,7 +14,13 @@ def btnEquals():
         value_input.set(sumup)
         operator=""
 def btnDelete():
-        value_input.set(value_input.get()[:-1])
+    global operator
+    temp= str(operator)
+    operator1=list(temp)
+    operator1.pop(-1)
+    operator = "".join(operator1)
+    value_input.set(operator)
+
 Calculator=tkinter.Tk()
 Calculator.geometry("240x362")#set the height and width of the window(widthXheight)
 Calculator.resizable(0,0)#resizalbe () method is used to create a fixed size window,so that the window can't be change
